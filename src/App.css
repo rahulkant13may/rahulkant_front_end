@@ -1,22 +1,25 @@
-.App {
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
   text-align: center;
+  margin: 20px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  text-align: center;
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.deletePost {
+  float: right;
+  margin-top: -75px;
 }
 
-.App-link {
-  color: #09d3ac;
+.showComment {
+  float: left;
+  text-align:center;
 }
