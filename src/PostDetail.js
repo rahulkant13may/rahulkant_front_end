@@ -21,7 +21,6 @@ class PostDetail extends  React.Component {
       .then(response => response.json())
       .then(data => {
         this.setState({postComments: data})
-        console.log(data)
       })
 
   }
@@ -44,10 +43,6 @@ class PostDetail extends  React.Component {
   }
 
   render() {
-
-    console.log(this.props.location.state)
-    
-
   return (
     <div className="row">
        

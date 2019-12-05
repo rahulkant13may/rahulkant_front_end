@@ -13,17 +13,15 @@ class PostPage extends  React.Component {
   }
 
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${this.props.match.params.id}`)
       .then(response => response.json())
       .then(data => {
         this.setState({posts: data})
-        console.log(data)
       })
 
   }
 
   render() {
-console.log(this.props.match.params.id)
   return (
     <div className="row">
     <h1 style={{display:"flex",justifyContent:"center"}}>{this.props.match.params.name}</h1>
